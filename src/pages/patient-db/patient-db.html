@@ -1,0 +1,23 @@
+<!--
+  Generated template for the PatientDbPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>patientDB</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar (ionInput)="getPatients($event)"></ion-searchbar>
+  <ion-list>
+    <button ion-item *ngFor="let patient of patients" (click)="viewPatient(patient)">
+      {{ patient.name }}
+    </button>
+  </ion-list>
+</ion-content>

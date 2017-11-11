@@ -3,16 +3,26 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>List</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="card-background-page">
+  <ion-card (click)="changePage('regPatient')">
+    <img src="assets/imgs/PDB.jpg"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-card (click)="changePage('patientDB')">
+    <img src="assets/imgs/PDB.jpg"/>
+    <div class="card-title">Client DB</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card (click)="changePage('makeAppointment')">
+    <img src="assets/imgs/PDB.jpg"/>
+    <div class="card-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
 </ion-content>
