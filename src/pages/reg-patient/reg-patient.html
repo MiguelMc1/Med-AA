@@ -16,77 +16,79 @@
 <ion-list>
   <h3 text-center>Datos Personales</h3>
   <ion-item>
-    <ion-input type="text" placeholder="Nombre(s)" [(ngModel)]="name"></ion-input>
+    <ion-input placeholder="Nombre(s)" [(ngModel)]="name"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Apellidos" [(ngModel)]="lastname"></ion-input>
+    <ion-input placeholder="Apellidos" [(ngModel)]="lastname"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Genero" [(ngModel)]="gender"></ion-input>
+    <ion-input placeholder="Genero" [(ngModel)]="gender"></ion-input>
   </ion-item>
+  <!--
   <ion-item>
     <ion-input type="text" placeholder="Fecha de nacimiento" [(ngModel)]="birth"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="No. de Seguro Médico (Si no tiene favor de ingresar NA)" [(ngModel)]="insurance"></ion-input>
+   <ion-input type="text" placeholder="No. de Seguro Médico (Si no tiene favor de ingresar NA)" [(ngModel)]="insurance"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-textarea type="text" placeholder="Dirección" [(ngModel)]="address"></ion-textarea>
+   <ion-textarea type="text" placeholder="Dirección" [(ngModel)]="address"></ion-textarea>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Código Postal" [(ngModel)]="cp"></ion-input>
+   <ion-input type="text" placeholder="Código Postal" [(ngModel)]="cp"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Ciudad" [(ngModel)]="city"></ion-input>
+   <ion-input type="text" placeholder="Ciudad" [(ngModel)]="city"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Telefono" [(ngModel)]="tel"></ion-input>
+   <ion-input type="text" placeholder="Telefono" [(ngModel)]="tel"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Celular" [(ngModel)]="cel"></ion-input>
+   <ion-input type="text" placeholder="Celular" [(ngModel)]="cel"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="email" placeholder="E-Mail" [(ngModel)]="email"></ion-input>
+   <ion-input type="email" placeholder="E-Mail" [(ngModel)]="email"></ion-input>
   </ion-item>
-    <h3 text-center>Datos Médicos</h3>
-    <ion-item>
-      <ion-input type="text" placeholder="Tipo de sangre" [(ngModel)]="blood"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-textarea type="text" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-textarea type="text" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-textarea type="text" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-textarea type="text" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-textarea type="text" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>
-    </ion-item>
-    <h3 text-center>Consulta actual</h3>
+   <h3 text-center>Datos Médicos</h3>
+   <ion-item>
+     <ion-input type="text" placeholder="Tipo de sangre" [(ngModel)]="blood"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-textarea type="text" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>
+   </ion-item>
+   <ion-item>
+     <ion-textarea type="text" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>
+   </ion-item>
+   <ion-item>
+     <ion-textarea type="text" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>
+   </ion-item>
+   <ion-item>
+     <ion-textarea type="text" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>
+   </ion-item>
+   <ion-item>
+     <ion-textarea type="text" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>
+   </ion-item>
+   <h3 text-center>Consulta actual</h3>
   <ion-item>
-    <ion-input type="text" placeholder="Edad" [(ngModel)]="age"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input type="text" placeholder="Peso" [(ngModel)]="weight"></ion-input>
+   <ion-input type="text" placeholder="Edad" [(ngModel)]="age"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input type="text" placeholder="Estatura" [(ngModel)]="height"></ion-input>
+   <ion-input type="text" placeholder="Peso" [(ngModel)]="weight"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-textarea type="text" placeholder="Motivo de consulta" [(ngModel)]="cons"></ion-textarea>
+   <ion-input type="text" placeholder="Estatura" [(ngModel)]="height"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-textarea type="text" placeholder="Sintomas" [(ngModel)]="symptom"></ion-textarea>
+   <ion-textarea type="text" placeholder="Motivo de consulta" [(ngModel)]="cons"></ion-textarea>
   </ion-item>
   <ion-item>
-    <ion-textarea type="text" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>
+   <ion-textarea type="text" placeholder="Sintomas" [(ngModel)]="symptom"></ion-textarea>
   </ion-item>
+  <ion-item>
+   <ion-textarea type="text" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>
+  </ion-item>
+  -->
 
   </ion-list>
-  <button ion-button block (click)="done(registro)">Enviar</button>
+  <button ion-button block (click)="done(name, lastname, gender)">Enviar</button>
 </ion-content>

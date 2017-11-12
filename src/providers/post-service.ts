@@ -16,37 +16,16 @@ export class PostService {
     console.log('Hello PostService Provider');
   }
 
-  newPatient(name, lastname,gender, birth, insurance, address, cp, city, tel, cel, email, blood, Mallergic, Oallergic, medicament, surgeries, pathology, age, weight, height, cons, symptom, temperature){
+  newPatient(name, lastname, gender){
     var postData = {
       name: name,
       lastname: lastname,
-      gender: gender,
-      birth: birth,
-      insurance: insurance,
-      address: address,
-      cp: cp,
-      city: city,
-      tel: tel,
-      cel: cel,
-      email: email,
-      blood: blood,
-      Mallergic: Mallergic,
-      Oallergic: Oallergic,
-      medicament: medicament,
-      surgeries: surgeries,
-      pathology: pathology,
-      age: age,
-      weight: weight,
-      height: height,
-      cons: cons,
-      symptom: symptom,
-      temperature: temperature,
+      gender: gender
     };
 
     var newPostKey = firebase.database().ref().child('patients').push().key;
     var updates = {};
     updates['/patients/' + newPostKey] = postData;
-    console.log(newPostKey);
     return firebase.database().ref().update(updates);
   }
 
