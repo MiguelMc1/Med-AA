@@ -14,26 +14,26 @@ export class RegPatientPage {
   name: string;
   lastname: string;
   gender: string;
-  /*private birth: any;
-  private insurance: any;
-  private address: any;
-  private cp: any;
-  private city: any;
-  private tel: any;
-  private cel: any;
-  private email: any;
-  private blood: any;
-  private Mallergic: any;
-  private Oallergic: any;
-  private medicament: any;
-  private surgeries: any;
-  private pathology: any;
-  private age: any;
-  private weight: any;
-  private height: any;
-  private cons: any;
-  private symptom: any;
-  private temperature: any;*/
+  birth: string;
+  insurance: string;
+  address: string;
+  cp: string;
+  edo: string;
+  tel: string;
+  cel: string;
+  email: string;
+  blood: string;
+  Mallergic: string;
+  Oallergic: string;
+  medicament: string;
+  surgeries: string;
+  pathology: string;
+  age: string;
+  weight: string;
+  height: string;
+  cons: string;
+  symptom: string;
+  temperature: string;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -45,7 +45,8 @@ export class RegPatientPage {
     console.log('ionViewDidLoad RegPatientPage');
   }
 
-  done(name: string, lastname: string, gender: string) {
+  done(name: string, lastname: string, gender: string, birth: string, insurance: string, address: string, cp: string, edo: string, tel: string, cel: string, email: string, blood: string, Mallergic: string, Oallergic: string, medicament: string, surgeries: string,
+    pathology: string, age: string, weight: string, height: string, cons: string, symptom: string, temperature: string) {
     let alert = this.alertCtrl.create({
       title: 'Registro Completado',
         buttons: [{
@@ -62,7 +63,7 @@ export class RegPatientPage {
     setTimeout(() => {
     loading.dismiss();
     }, 1000);
-    this.af.list('/patients').push({name, lastname, gender})
+    this.af.list('/patients').push({name, lastname, gender, birth, insurance, address, cp, edo, tel, cel, email, blood, Mallergic, Oallergic, medicament, surgeries, pathology, age, weight, height, cons, symptom, temperature})
     .then(() => {
       this.navCtrl.setRoot(HomePage);
     });

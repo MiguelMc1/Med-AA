@@ -76,4 +76,6 @@ export class ModalContentPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+
 }
