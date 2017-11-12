@@ -10,7 +10,6 @@ import { FirebaseProvider } from '../../providers/firebase';
   templateUrl: 'patient-db.html',
 })
 export class PatientDBPage {
-
   patients: FirebaseListObservable<any[]>;
   filterI: Array<any>;
 
@@ -31,7 +30,6 @@ export class PatientDBPage {
   }
 
   viewPatient(patient){
-    console.log(patient);
     let modal = this.modalCtrl.create(ModalContentPage, {patient2go: patient})
     modal.present();
   }
@@ -55,7 +53,7 @@ export class PatientDBPage {
 
 @Component({
   template: `
-  <ion-header>
+<ion-header>
   <ion-toolbar>
     <ion-title>
       Description
