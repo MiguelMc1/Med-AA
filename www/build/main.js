@@ -1,13 +1,65 @@
 webpackJsonp([3],{
 
-/***/ 133:
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patient_db_patient_db__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__make_appointment_make_appointment__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reg_patient_reg_patient__ = __webpack_require__(136);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    HomePage.prototype.changePage = function (link) {
+        if (link == "patientDB") {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__patient_db_patient_db__["b" /* PatientDBPage */]);
+        }
+        else if (link == "regPatient") {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__reg_patient_reg_patient__["a" /* RegPatientPage */]);
+        }
+        else if (link == "makeAppointment") {
+            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__make_appointment_make_appointment__["a" /* MakeAppointmentPage */]);
+        }
+    };
+    HomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n  <ion-card (click)="changePage(\'regPatient\')">\n\n    <img src="assets/imgs/NuevoPaciente.jpg"/>\n\n    <div class="card-title">Paciente Nuevo</div>\n\n    <div class="card-subtitle">41 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'patientDB\')">\n\n    <img src="assets/imgs/pacientes.jpg"/>\n\n    <div class="card-title">Pacientes</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'makeAppointment\')">\n\n    <img src="assets/imgs/PDB.jpg"/>\n\n    <div class="card-title">Agendar citas</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\home\home.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
+    ], HomePage);
+    return HomePage;
+}());
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 135:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MakeAppointmentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_component__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_component__ = __webpack_require__(192);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -53,15 +105,15 @@ var MakeAppointmentPage = (function () {
 
 /***/ }),
 
-/***/ 134:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegPatientPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -133,7 +185,7 @@ var RegPatientPage = (function () {
     };
     RegPatientPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-reg-patient',template:/*ion-inline-start:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\reg-patient\reg-patient.html"*/`<!--\n\n  Generated template for the RegPatientPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Registro de Pacientes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<ion-list>\n\n  <h3 text-center>Datos Personales</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Nombre(s)</ion-label>\n\n    <ion-input type="text"[(ngModel)]="name"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Apellidos</ion-label>\n\n    <ion-input type="text" [(ngModel)]="lastname"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Genero (Femenino o Masculino)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="gender"></ion-input>\n\n  </ion-item>\n\n  <!--\n\n  <ion-item>\n\n    <ion-label stacked>Fecha de nacimiento</ion-label>\n\n    <ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>\n\n    <!--<ion-input type="text"  [(ngModel)]="birth"></ion-input>-->\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>No. de Seguro Médico (Si no tiene favor de ingresar NA)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="insurance"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Dirección</ion-label>\n\n    <ion-textarea type="text" [(ngModel)]="address"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Código Postal</ion-label>\n\n    <ion-input type="text" [(ngModel)]="cp"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Ciudad</ion-label>\n\n    <ion-input type="text" [(ngModel)]="city"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Teléfono</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="tel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Celular</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="cel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>E-Mail</ion-label>\n\n    <ion-input type="email" [(ngModel)]="email"></ion-input>\n\n  </ion-item>\n\n    <h3 text-center>Datos Médicos</h3>\n\n    <ion-item>\n\n      <ion-label stacked>Tipo de sangre</ion-label>\n\n      <ion-input type="text" [(ngModel)]="blood"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Eres alergico a algun medicamento?</ion-label>\n\n      <ion-textarea type="text"  rows="5" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Tiene alguna otra alergia?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Toma algún medicamento en la actualidad?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Le han intervenido quirúrgicamente?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Sufre alguna Patologia?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>\n\n    </ion-item>\n\n    <h3 text-center>Consulta actual</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Edad</ion-label>\n\n    <ion-input type="number" [(ngModel)]="age"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Peso en Kg</ion-label>\n\n    <ion-input type="number" [(ngModel)]="weight"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Estatura en cm</ion-label>\n\n    <ion-input type="number" [(ngModel)]="height"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Motivo de consulta</ion-label>\n\n    <ion-textarea type="text"  [(ngModel)]="cons"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Sintomas</ion-label>\n\n    <ion-textarea type="text"  [(ngModel)]="symptom"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>¿Ha tenido temperatura en los ultimos días?</ion-label>\n\n    <ion-textarea type="text" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>\n\n  </ion-item>\n\n  -->\n\n\n\n  </ion-list>\n\n  <button ion-button block (click)="done(name, lastname, gender)">Enviar</button>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\reg-patient\reg-patient.html"*/
+            selector: 'page-reg-patient',template:/*ion-inline-start:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\reg-patient\reg-patient.html"*/`<!--\n\n  Generated template for the RegPatientPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Registro de Pacientes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<ion-list>\n\n  <h3 text-center>Datos Personales</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Nombre(s)</ion-label>\n\n    <ion-input type="text"[(ngModel)]="name"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Apellidos</ion-label>\n\n    <ion-input type="text" [(ngModel)]="lastname"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Genero (Femenino o Masculino)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="gender"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Fecha de nacimiento</ion-label>\n\n    <ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>\n\n    <!--<ion-input type="text"  [(ngModel)]="birth"></ion-input>-->\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>No. de Seguro Médico (Si no tiene favor de ingresar NA)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="insurance"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Dirección</ion-label>\n\n    <ion-textarea type="text" [(ngModel)]="address"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Código Postal</ion-label>\n\n    <ion-input type="text" [(ngModel)]="cp"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Ciudad</ion-label>\n\n    <ion-input type="text" [(ngModel)]="city"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Teléfono</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="tel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Celular</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="cel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>E-Mail</ion-label>\n\n    <ion-input type="email" [(ngModel)]="email"></ion-input>\n\n  </ion-item>\n\n    <h3 text-center>Datos Médicos</h3>\n\n    <ion-item>\n\n      <ion-label stacked>Tipo de sangre</ion-label>\n\n      <ion-input type="text" [(ngModel)]="blood"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Eres alergico a algun medicamento?</ion-label>\n\n      <ion-textarea type="text"  rows="5" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Tiene alguna otra alergia?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Toma algún medicamento en la actualidad?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Le han intervenido quirúrgicamente?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Sufre alguna Patologia?</ion-label>\n\n      <ion-textarea type="text" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>\n\n    </ion-item>\n\n    <h3 text-center>Consulta actual</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Edad</ion-label>\n\n    <ion-input type="number" [(ngModel)]="age"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Peso en Kg</ion-label>\n\n    <ion-input type="number" [(ngModel)]="weight"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Estatura en cm</ion-label>\n\n    <ion-input type="number" [(ngModel)]="height"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Motivo de consulta</ion-label>\n\n    <ion-textarea type="text"  [(ngModel)]="cons"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Sintomas</ion-label>\n\n    <ion-textarea type="text"  [(ngModel)]="symptom"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>¿Ha tenido temperatura en los ultimos días?</ion-label>\n\n    <ion-textarea type="text" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>\n\n  </ion-item>\n\n  -->\n\n\n\n  </ion-list>\n\n  <button ion-button block (click)="done(name, lastname, gender)">Enviar</button>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\reg-patient\reg-patient.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _e || Object])
     ], RegPatientPage);
@@ -145,7 +197,7 @@ var RegPatientPage = (function () {
 
 /***/ }),
 
-/***/ 146:
+/***/ 148:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -158,11 +210,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 146;
+webpackEmptyAsyncContext.id = 148;
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -190,21 +242,21 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 189;
+webpackAsyncContext.id = 191;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 190:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(245);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -250,70 +302,17 @@ var MyApp = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\app\app.html"*/`<ion-menu [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content>\n\n    <ion-list>\n\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=app.component.js.map
-
-/***/ }),
-
-/***/ 195:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__patient_db_patient_db__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__make_appointment_make_appointment__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reg_patient_reg_patient__ = __webpack_require__(134);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage.prototype.changePage = function (link) {
-        if (link == "patientDB") {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__patient_db_patient_db__["b" /* PatientDBPage */]);
-        }
-        else if (link == "regPatient") {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__reg_patient_reg_patient__["a" /* RegPatientPage */]);
-        }
-        else if (link == "makeAppointment") {
-            this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__make_appointment_make_appointment__["a" /* MakeAppointmentPage */]);
-        }
-    };
-    HomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n  <ion-card (click)="changePage(\'regPatient\')">\n\n    <img src="assets/imgs/NuevoPaciente.jpg"/>\n\n    <div class="card-title">Paciente Nuevo</div>\n\n    <div class="card-subtitle">41 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'patientDB\')">\n\n    <img src="assets/imgs/pacientes.jpg"/>\n\n    <div class="card-title">Pacientes</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'makeAppointment\')">\n\n    <img src="assets/imgs/PDB.jpg"/>\n\n    <div class="card-title">Agendar citas</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\lucero\Documents\7 Sem\Pensamiento creativo\Med-AA\src\pages\home\home.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
-    ], HomePage);
-    return HomePage;
-}());
-
-//# sourceMappingURL=home.js.map
 
 /***/ }),
 
@@ -397,17 +396,17 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_patient_db_patient_db__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_make_appointment_make_appointment__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_reg_patient_reg_patient__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_make_appointment_make_appointment__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_reg_patient_reg_patient__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_angularfire2__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angularfire2_auth__ = __webpack_require__(446);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angularfire2_database__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_angularfire2_database__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -497,7 +496,7 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalContentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
