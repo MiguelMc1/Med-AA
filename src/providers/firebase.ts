@@ -9,4 +9,7 @@ export class FirebaseProvider {
   getPatients() {
     return this.afd.list('/patients').valueChanges();
   }
+  getPatientsNames() {
+    return this.afd.list('/patients').valueChanges();
+  }
 }

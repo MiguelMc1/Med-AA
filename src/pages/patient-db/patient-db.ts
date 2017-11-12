@@ -12,7 +12,7 @@ import { FirebaseProvider } from '../../providers/firebase';
 export class PatientDBPage {
 
   patients: FirebaseListObservable<any[]>;
-  pFilter: {};
+  pFilter: ;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public afDatabase: AngularFireDatabase, public modalCtrl: ModalController,
@@ -35,7 +35,7 @@ export class PatientDBPage {
       var val = ev.target.value;
       if (val && val.trim() != '') {
         this.patients = this.patients.filter((item) => {
-          console.log(item);
+          console.log(item.name);
        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
      })
    }
@@ -45,7 +45,7 @@ export class PatientDBPage {
 
 @Component({
   template: `
-<ion-header>
+  <ion-header>
   <ion-toolbar>
     <ion-title>
       Description
