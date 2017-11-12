@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, Platform, ViewController} from 'ionic-angular';
 import { AngularFireDatabase } from 'angularfire2/database';
-//import { Observable } from 'rxjs/Observable';
+import { FirebaseListObservable } from 'angularfire2/database-deprecated';
+import { FirebaseProvider } from '../../providers/firebase';
 
 @IonicPage()
 @Component({
@@ -9,21 +10,18 @@ import { AngularFireDatabase } from 'angularfire2/database';
   templateUrl: 'patient-db.html',
 })
 export class PatientDBPage {
-  searchQuery: string = '';
-  patients: any;
+
+  patients: FirebaseListObservable<any[]>;
+  pFilter: {};
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    public afDatabase: AngularFireDatabase, public modalCtrl: ModalController) {
+    public afDatabase: AngularFireDatabase, public modalCtrl: ModalController,
+    public firebaseProvider: FirebaseProvider) {
       this.initializeData();
   }
 
   initializeData(){
-    //this.patients = this.afDatabase.list('/patients').valueChanges();
-    this.patients = [
-      {id:1, name:"Juan Perez", sex:"male", allegies:"milk"},
-      {id:2, name:"Jojo", sex:"male", allegies:"egg"},
-      {id:3, name:"Maria", sex:"female", allegies:"toast"},
-    ]
+    this.patients = this.firebaseProvider.getPatients();
   }
 
   viewPatient(patient){
@@ -33,18 +31,14 @@ export class PatientDBPage {
   }
 
   getPatients(ev) {
-    // Reset items back to all of the items
-    this.initializeData();
-
-    // set val to the value of the ev target
-    var val = ev.target.value;
-
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.patients = this.patients.filter((item) => {
-        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
-    }
+      this.initializeData();
+      var val = ev.target.value;
+      if (val && val.trim() != '') {
+        this.patients = this.patients.filter((item) => {
+          console.log(item);
+       return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+     })
+   }
   }
 
 }

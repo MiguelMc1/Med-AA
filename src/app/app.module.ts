@@ -14,9 +14,12 @@ import { ModalContentPage } from '../pages/patient-db/patient-db'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { FirebaseProvider } from './../providers/firebase';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyCUjR3N8ebWlDmZVdwhkMzxemk8TgEycis",
@@ -42,7 +45,8 @@ export const firebaseConfig = {
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -55,6 +59,8 @@ export const firebaseConfig = {
     RegPatientPage
   ],
   providers: [
+    FirebaseProvider,
+    AngularFireDatabase,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
