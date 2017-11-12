@@ -38,5 +38,8 @@
     "@ionic/app-scripts": "3.1.0",
     "typescript": "2.4.2"
   },
+  "scripts": {
+        "build": "ls"
+    },
   "description": "An Ionic project"
 }
