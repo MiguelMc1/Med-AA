@@ -27,8 +27,7 @@ export class PatientDBPage {
   }
 
   viewPatient(patient){
-    console.log(patient);
-    let modal = this.modalCtrl.create(ModalContentPage, {patient2go: patient})
+    let modal = this.modalCtrl.create(ModalContentPage, {patient2go: [patient.name, patient.sex, patient.allegies]})
     modal.present();
   }
 
@@ -82,4 +81,6 @@ export class ModalContentPage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
+
+
 }

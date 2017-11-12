@@ -17,7 +17,7 @@
   <h3 text-center>Datos Personales</h3>
   <ion-item>
     <ion-label stacked>Nombre(s)</ion-label>
-    <ion-input type="text"[(ngModel)]="name"></ion-input>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Apellidos</ion-label>
@@ -29,8 +29,8 @@
   </ion-item>
   <ion-item>
     <ion-label stacked>Fecha de nacimiento</ion-label>
-    <ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>
-    <!--<ion-input type="text"  [(ngModel)]="birth"></ion-input>-->
+    <!--<ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>-->
+    <ion-input type="text"  [(ngModel)]="birth"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>No. de Seguro Médico (Si no tiene favor de ingresar NA)</ion-label>
@@ -45,8 +45,8 @@
     <ion-input type="text" [(ngModel)]="cp"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label stacked>Ciudad</ion-label>
-    <ion-input type="text" [(ngModel)]="city"></ion-input>
+    <ion-label stacked>Municipio-Estado</ion-label>
+    <ion-input type="text" [(ngModel)]="edo"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Teléfono</ion-label>
@@ -58,7 +58,7 @@
   </ion-item>
   <ion-item>
     <ion-label stacked>E-Mail</ion-label>
-    <ion-input type="email" [(ngModel)]="email"></ion-input>
+    <ion-input type="text" [(ngModel)]="email"></ion-input>
   </ion-item>
     <h3 text-center>Datos Médicos</h3>
     <ion-item>
@@ -67,23 +67,23 @@
     </ion-item>
     <ion-item>
       <ion-label stacked>¿Eres alergico a algun medicamento?</ion-label>
-      <ion-textarea type="text"  rows="5" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>
+      <ion-textarea type="text"  rows="4" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label stacked>¿Tiene alguna otra alergia?</ion-label>
-      <ion-textarea type="text" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>
+      <ion-textarea type="text" rows="4" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label stacked>¿Toma algún medicamento en la actualidad?</ion-label>
-      <ion-textarea type="text" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>
+      <ion-textarea type="text" rows="4" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label stacked>¿Le han intervenido quirúrgicamente?</ion-label>
-      <ion-textarea type="text" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>
+      <ion-textarea type="text" rows="4" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label stacked>¿Sufre alguna Patologia?</ion-label>
-      <ion-textarea type="text" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>
+      <ion-textarea type="text" rows="4" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>
     </ion-item>
     <h3 text-center>Consulta actual</h3>
   <ion-item>
@@ -100,18 +100,18 @@
   </ion-item>
   <ion-item>
     <ion-label stacked>Motivo de consulta</ion-label>
-    <ion-textarea type="text"  [(ngModel)]="cons"></ion-textarea>
+    <ion-textarea type="text" rows="4" [(ngModel)]="cons"></ion-textarea>
   </ion-item>
   <ion-item>
     <ion-label stacked>Sintomas</ion-label>
-    <ion-textarea type="text"  [(ngModel)]="symptom"></ion-textarea>
+    <ion-textarea type="text" rows="4" [(ngModel)]="symptom"></ion-textarea>
   </ion-item>
   <ion-item>
     <ion-label stacked>¿Ha tenido temperatura en los ultimos días?</ion-label>
-    <ion-textarea type="text" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>
+    <ion-textarea type="text" rows="4" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>
   </ion-item>
-  -->
+
 
   </ion-list>
-  <button ion-button block (click)="done(name, lastname, gender)">Enviar</button>
+  <button ion-button block (click)="done(name, lastname, gender, birth, insurance, address, cp, edo, tel, cel, email, blood, Mallergic, Oallergic, medicament, surgeries, pathology, age, weight, height, cons, symptom, temperature)">Enviar</button>
 </ion-content>
