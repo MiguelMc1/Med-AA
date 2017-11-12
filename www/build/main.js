@@ -41,7 +41,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n  <ion-card (click)="changePage(\'regPatient\')">\n\n    <img src="assets/imgs/NuevoPaciente.jpg"/>\n\n    <div class="card-title">Paciente Nuevo</div>\n\n    <div class="card-subtitle">41 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'patientDB\')">\n\n    <img src="assets/imgs/pacientes.jpg"/>\n\n    <div class="card-title">Pacientes</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'makeAppointment\')">\n\n    <img src="assets/imgs/PDB.jpg"/>\n\n    <div class="card-title">Agendar citas</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\home\home.html"*/`<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="card-background-page">\n\n  <ion-card (click)="changePage(\'regPatient\')">\n\n    <img src="assets/imgs/NuevoPaciente.jpg"/>\n\n    <div class="card-title">Paciente Nuevo</div>\n\n    <div class="card-subtitle">41 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'patientDB\')">\n\n    <img src="assets/imgs/pacientes.jpg"/>\n\n    <div class="card-title">Pacientes</div>\n\n    <div class="card-subtitle">64 Listings</div>\n\n  </ion-card>\n\n\n\n  <ion-card (click)="changePage(\'makeAppointment\')">\n\n    <img src="assets/imgs/PDB.jpg"/>\n\n    <div class="card-title">Agendar citas</div>\n\n    <div class="card-subtitle">72 Listings</div>\n\n  </ion-card>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
     ], HomePage);
@@ -93,7 +93,7 @@ var MakeAppointmentPage = (function () {
     };
     MakeAppointmentPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-make-appointment',template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\make-appointment\make-appointment.html"*/`<!--\n\n  Generated template for the MakeAppointmentPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Agendar Cita</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <iframe id="bookingCalendar" src="https://med-aa.appointlet.com/s/cita-medica" style="width: 100%; max-width: 100%; height: 550px; border: 0; padding: 0; margin: 0;"></iframe>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\make-appointment\make-appointment.html"*/,
+            selector: 'page-make-appointment',template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\make-appointment\make-appointment.html"*/`<!--\n\n  Generated template for the MakeAppointmentPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Agendar Cita</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <iframe id="bookingCalendar" src="https://med-aa.appointlet.com/s/cita-medica" style="width: 100%; max-width: 100%; height: 550px; border: 0; padding: 0; margin: 0;"></iframe>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\make-appointment\make-appointment.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
@@ -165,7 +165,7 @@ var RegPatientPage = (function () {
     };
     RegPatientPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-reg-patient',template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\reg-patient\reg-patient.html"*/`<!--\n\n  Generated template for the RegPatientPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Registro de Pacientes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<ion-list>\n\n  <h3 text-center>Datos Personales</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Nombre(s)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="name"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Apellidos</ion-label>\n\n    <ion-input type="text" [(ngModel)]="lastname"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Genero (Femenino o Masculino)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="gender"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Fecha de nacimiento</ion-label>\n\n    <!--<ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>-->\n\n    <ion-input type="text"  [(ngModel)]="birth"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>No. de Seguro Médico (Si no tiene favor de ingresar NA)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="insurance"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Dirección</ion-label>\n\n    <ion-textarea type="text" [(ngModel)]="address"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Código Postal</ion-label>\n\n    <ion-input type="text" [(ngModel)]="cp"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Municipio-Estado</ion-label>\n\n    <ion-input type="text" [(ngModel)]="edo"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Teléfono</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="tel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Celular</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="cel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>E-Mail</ion-label>\n\n    <ion-input type="text" [(ngModel)]="email"></ion-input>\n\n  </ion-item>\n\n    <h3 text-center>Datos Médicos</h3>\n\n    <ion-item>\n\n      <ion-label stacked>Tipo de sangre</ion-label>\n\n      <ion-input type="text" [(ngModel)]="blood"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Eres alergico a algun medicamento?</ion-label>\n\n      <ion-textarea type="text"  rows="4" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Tiene alguna otra alergia?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Toma algún medicamento en la actualidad?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Le han intervenido quirúrgicamente?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Sufre alguna Patologia?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>\n\n    </ion-item>\n\n    <h3 text-center>Consulta actual</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Edad</ion-label>\n\n    <ion-input type="number" [(ngModel)]="age"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Peso en Kg</ion-label>\n\n    <ion-input type="number" [(ngModel)]="weight"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Estatura en cm</ion-label>\n\n    <ion-input type="number" [(ngModel)]="height"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Motivo de consulta</ion-label>\n\n    <ion-textarea type="text" rows="4" [(ngModel)]="cons"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Sintomas</ion-label>\n\n    <ion-textarea type="text" rows="4" [(ngModel)]="symptom"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>¿Ha tenido temperatura en los ultimos días?</ion-label>\n\n    <ion-textarea type="text" rows="4" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>\n\n  </ion-item>\n\n\n\n\n\n  </ion-list>\n\n  <button ion-button block (click)="done(name, lastname, gender, birth, insurance, address, cp, edo, tel, cel, email, blood, Mallergic, Oallergic, medicament, surgeries, pathology, age, weight, height, cons, symptom, temperature)">Enviar</button>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\reg-patient\reg-patient.html"*/
+            selector: 'page-reg-patient',template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\reg-patient\reg-patient.html"*/`<!--\n\n  Generated template for the RegPatientPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Registro de Pacientes</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n<ion-list>\n\n  <h3 text-center>Datos Personales</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Nombre(s)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="name"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Apellidos</ion-label>\n\n    <ion-input type="text" [(ngModel)]="lastname"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Genero (Femenino o Masculino)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="gender"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Fecha de nacimiento</ion-label>\n\n    <!--<ion-datetime displayFormat="DD MMM YYYY"  [(ngModel)]="birth"></ion-datetime>-->\n\n    <ion-input type="text"  [(ngModel)]="birth"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>No. de Seguro Médico (Si no tiene favor de ingresar NA)</ion-label>\n\n    <ion-input type="text" [(ngModel)]="insurance"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Dirección</ion-label>\n\n    <ion-textarea type="text" [(ngModel)]="address"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Código Postal</ion-label>\n\n    <ion-input type="text" [(ngModel)]="cp"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Municipio-Estado</ion-label>\n\n    <ion-input type="text" [(ngModel)]="edo"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Teléfono</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="tel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Celular</ion-label>\n\n    <ion-input type="tel" [(ngModel)]="cel"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>E-Mail</ion-label>\n\n    <ion-input type="text" [(ngModel)]="email"></ion-input>\n\n  </ion-item>\n\n    <h3 text-center>Datos Médicos</h3>\n\n    <ion-item>\n\n      <ion-label stacked>Tipo de sangre</ion-label>\n\n      <ion-input type="text" [(ngModel)]="blood"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Eres alergico a algun medicamento?</ion-label>\n\n      <ion-textarea type="text"  rows="4" placeholder="¿Eres alergico a algun medicamento? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Mallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Tiene alguna otra alergia?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Tiene alguna otra alergia? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="Oallergic"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Toma algún medicamento en la actualidad?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Toma algún medicamento en la actualidad? En caso afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="medicament"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Le han intervenido quirúrgicamente?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Le han intervenido quirúrgicamente en alguna ocasión? En caso afirmativo, Especifique las intervenciones y la fecha aproximada:" [(ngModel)]="surgeries"></ion-textarea>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>¿Sufre alguna Patologia?</ion-label>\n\n      <ion-textarea type="text" rows="4" placeholder="¿Sufre alguna Patologia? En caso Afirmativo, Especifique a cuál o cuáles:" [(ngModel)]="pathology"></ion-textarea>\n\n    </ion-item>\n\n    <h3 text-center>Consulta actual</h3>\n\n  <ion-item>\n\n    <ion-label stacked>Edad</ion-label>\n\n    <ion-input type="number" [(ngModel)]="age"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Peso en Kg</ion-label>\n\n    <ion-input type="number" [(ngModel)]="weight"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Estatura en cm</ion-label>\n\n    <ion-input type="number" [(ngModel)]="height"></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Motivo de consulta</ion-label>\n\n    <ion-textarea type="text" rows="4" [(ngModel)]="cons"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>Sintomas</ion-label>\n\n    <ion-textarea type="text" rows="4" [(ngModel)]="symptom"></ion-textarea>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label stacked>¿Ha tenido temperatura en los ultimos días?</ion-label>\n\n    <ion-textarea type="text" rows="4" placeholder="¿Ha tenido temperatura en los ultimos días? En caso afirmativo, Especifique que días y la temperatura que alcanzó" [(ngModel)]="temperature"></ion-textarea>\n\n  </ion-item>\n\n\n\n\n\n  </ion-list>\n\n  <button ion-button block (click)="done(name, lastname, gender, birth, insurance, address, cp, edo, tel, cel, email, blood, Mallergic, Oallergic, medicament, surgeries, pathology, age, weight, height, cons, symptom, temperature)">Enviar</button>\n\n</ion-content>\n\n`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\reg-patient\reg-patient.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
@@ -206,11 +206,11 @@ var map = {
 		2
 	],
 	"../pages/patient-db/patient-db.module": [
-		455,
+		454,
 		1
 	],
 	"../pages/reg-patient/reg-patient.module": [
-		454,
+		455,
 		0
 	]
 };
@@ -288,7 +288,7 @@ var MyApp = (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\app\app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\app\app.html"*/`<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -329,10 +329,9 @@ var FirebaseProvider = (function () {
     };
     FirebaseProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_angularfire2_database__["a" /* AngularFireDatabase */]])
     ], FirebaseProvider);
     return FirebaseProvider;
-    var _a;
 }());
 
 //# sourceMappingURL=firebase.js.map
@@ -384,7 +383,7 @@ var ListPage = (function () {
     };
     ListPage = ListPage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\list\list.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\list\list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\list\list.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\list\list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
     ], ListPage);
@@ -484,8 +483,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/make-appointment/make-appointment.module#MakeAppointmentPageModule', name: 'MakeAppointmentPage', segment: 'make-appointment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reg-patient/reg-patient.module#RegPatientPageModule', name: 'RegPatientPage', segment: 'reg-patient', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/patient-db/patient-db.module#PatientDBPageModule', name: 'PatientDBPage', segment: 'patient-db', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/patient-db/patient-db.module#PatientDBPageModule', name: 'PatientDBPage', segment: 'patient-db', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/reg-patient/reg-patient.module#RegPatientPageModule', name: 'RegPatientPage', segment: 'reg-patient', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_12_angularfire2__["a" /* AngularFireModule */].initializeApp(firebaseConfig),
@@ -552,7 +551,14 @@ var PatientDBPage = (function () {
         this.initializeData();
     }
     PatientDBPage.prototype.initializeData = function () {
+        var _this = this;
         this.patients = this.firebaseProvider.getPatients();
+        this.patients.subscribe(function (item) {
+            _this.filterI = [];
+            item.forEach(function (k) {
+                _this.filterI.push(k);
+            });
+        });
     };
     PatientDBPage.prototype.viewPatient = function (patient) {
         console.log(patient);
@@ -560,24 +566,28 @@ var PatientDBPage = (function () {
         modal.present();
     };
     PatientDBPage.prototype.getPatients = function (ev) {
+        var _this = this;
         this.initializeData();
         var val = ev.target.value;
         if (val && val.trim() != '') {
-            this.patients = this.patients.filter(function (item) {
-                console.log(item.name);
-                return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            this.patients.subscribe(function (item) {
+                _this.filterI = [];
+                item.forEach(function (k) {
+                    if (k.name.toLowerCase().indexOf(val.toLowerCase()) > -1) {
+                        _this.filterI.push(k);
+                    }
+                });
             });
         }
     };
     PatientDBPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-patient-db',template:/*ion-inline-start:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\patient-db\patient-db.html"*/`<!--\n  Generated template for the PatientDbPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>patientDB</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-searchbar (ionInput)="getPatients($event)"></ion-searchbar>\n  <ion-list>\n    <button ion-item *ngFor="let patient of patients | async" (click)="viewPatient(patient)">\n      {{ patient.name }}\n    </button>\n  </ion-list>\n</ion-content>\n`/*ion-inline-end:"C:\Users\Miguel Mtz\documents\uanl\7sem\pc\med-aa\src\pages\patient-db\patient-db.html"*/,
+            selector: 'page-patient-db',template:/*ion-inline-start:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\patient-db\patient-db.html"*/`<!--\n  Generated template for the PatientDbPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>patientDB</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-searchbar (ionInput)="getPatients($event)"></ion-searchbar>\n  <ion-list>\n    <button ion-item *ngFor="let patient of filterI" (click)="viewPatient(patient)">\n      {{ patient.name }}\n    </button>\n  </ion-list>\n</ion-content>\n`/*ion-inline-end:"C:\Users\Miguel Mtz\Documents\UANL\7Sem\PC\Med-AA\src\pages\patient-db\patient-db.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_firebase__["a" /* FirebaseProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__providers_firebase__["a" /* FirebaseProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_firebase__["a" /* FirebaseProvider */]) === "function" && _e || Object])
     ], PatientDBPage);
     return PatientDBPage;
+    var _a, _b, _c, _d, _e;
 }());
 
 var ModalContentPage = (function () {
@@ -594,11 +604,10 @@ var ModalContentPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             template: "\n  <ion-header>\n  <ion-toolbar>\n    <ion-title>\n      Description\n    </ion-title>\n    <ion-buttons start>\n    <button ion-button (click)=\"dismiss()\">\n      <span ion-text color=\"primary\" showWhen=\"ios\">Cancel</span>\n      <ion-icon name=\"md-close\" showWhen=\"android, windows\"></ion-icon>\n    </button>\n  </ion-buttons>\n  </ion-toolbar>\n</ion-header>\n<ion-content>\n{{patient | json}}\n</ion-content>\n"
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]) === "function" && _c || Object])
     ], ModalContentPage);
     return ModalContentPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=patient-db.js.map

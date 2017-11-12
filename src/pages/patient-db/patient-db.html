@@ -16,7 +16,7 @@
 <ion-content>
   <ion-searchbar (ionInput)="getPatients($event)"></ion-searchbar>
   <ion-list>
-    <button ion-item *ngFor="let patient of patients | async" (click)="viewPatient(patient)">
+    <button ion-item *ngFor="let patient of filterI" (click)="viewPatient(patient)">
       {{ patient.name }}
     </button>
   </ion-list>

@@ -12,7 +12,7 @@ import { FirebaseProvider } from '../../providers/firebase';
 export class PatientDBPage {
 
   patients: FirebaseListObservable<any[]>;
-  pFilter: ;
+  filterI: Array<any>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public afDatabase: AngularFireDatabase, public modalCtrl: ModalController,
@@ -22,6 +22,12 @@ export class PatientDBPage {
 
   initializeData(){
     this.patients = this.firebaseProvider.getPatients();
+    this.patients.subscribe((item) => {
+      this.filterI = [];
+      item.forEach(k => {
+          this.filterI.push(k);
+      })
+    })
   }
 
   viewPatient(patient){
@@ -34,9 +40,13 @@ export class PatientDBPage {
       this.initializeData();
       var val = ev.target.value;
       if (val && val.trim() != '') {
-        this.patients = this.patients.filter((item) => {
-          console.log(item.name);
-       return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        this.patients.subscribe((item) => {
+          this.filterI = [];
+          item.forEach(k => {
+            if( k.name.toLowerCase().indexOf(val.toLowerCase()) > -1) {
+                    this.filterI.push(k);
+                }
+          })
      })
    }
   }
